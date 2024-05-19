@@ -2,7 +2,7 @@ function initialise() {
 	// define the tile layer properties and set the appropriate attribution
 	var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 	var osmAttrib = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 50, attribution: osmAttrib});
+	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 100, attribution: osmAttrib});
 
 	// create the map object
 	myMap = new L.Map('mapid');
