@@ -11,5 +11,5 @@ function initialise() {
 	// apply the properties of the map
 	myMap.addLayer(osm);
 	// add markers?
-	MarkMe();
+	MarkMe(myMap);
 }
