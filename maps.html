@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 	    <title>Example leaflet.js map</title>
 		<style type="text/css">
-			#body { padding: 0; margin: 0; }
-			#html, body, #mapid { height: 100%; width: 100%; }
+			#mapid { height: 300px; width: 400px; float:right; }
+			#text { width: 300px; float:left; }
 			
 			/* To make #mapid take up the full screen the following is needed: 
 			body { padding: 0; margin: 0; }
@@ -21,10 +21,16 @@
 			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
 			crossorigin=""></script>
 
-	    <script src="./maplogic.js"></script>
+	    <script src="./eg6-2-maplogic.js"></script>
 	</head>
 
 	<body onload="initialise()">
+		<h1>My example map</h1>
+		<div id="text">
+			This is some text<br>
+			It demonstrates different map placements<br>
+			Goal achieved!
+		</div>
 		<div id="mapid"></div>
 	</body>
 </html>
