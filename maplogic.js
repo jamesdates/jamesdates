@@ -11,6 +11,7 @@ function initialise() {
 	// apply the properties of the map
 	myMap.addLayer(osm);
 	// add markers?
+	markMe();
 }
 
 function MarkMe() {
@@ -21,12 +22,10 @@ function MarkMe() {
   home1.bindPopup("<b>1st Home</b> This is where I first lived, for approximately 1 year, I believe. After this we moved, but luckily not very far.>");
 
   function openHome1() {
-    home1.openPopup;
+    home1.openPopup();
   }
 
   birth.on('click', function(e) {
-    map.setView(e.latlng, 100); // Zoom to level 15 when marker1 is clicked
+    myMap.setView(e.latlng, 100); // Zoom to level 15 when marker1 is clicked
 });
 }
-
-MarkMe(myMap);
