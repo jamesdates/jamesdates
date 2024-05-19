@@ -5,11 +5,11 @@ function initialise() {
     // Define the tile layer properties and set the appropriate attribution
     var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-    var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 100, attribution: osmAttrib});
+    var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});
 
     // Create the map object
     myMap = new L.Map('mapid');
-    // Start the map in South-East England
+    // Start the map at the initial coordinates
     myMap.setView(new L.LatLng(58.466781651989535, 8.755421841858654), 9);
     // Apply the properties of the map
     myMap.addLayer(osm);
@@ -28,13 +28,13 @@ function addMarkers() {
     home1.bindPopup("<b>1st Home</b> This is where I first lived, for approximately 1 year, I believe. After this we moved, but luckily not very far.");
 
     // Function to open home1 marker's popup when the link in birth marker's popup is clicked
-    function openHome1() {
+    window.openHome1 = function() {
         home1.openPopup();
     }
 
     // Add click event listener to birth marker to zoom in when clicked
     birth.on('click', function(e) {
-        myMap.setView(e.latlng, 100); // Zoom to level 100 when birth marker is clicked
+        myMap.setView(e.latlng, 15); // Zoom to level 15 when birth marker is clicked
     });
 }
 
