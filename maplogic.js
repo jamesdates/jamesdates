@@ -10,7 +10,6 @@ function initialise() {
 	myMap.setView(new L.LatLng(58.466781651989535, 8.755421841858654),9);
 	// apply the properties of the map
 	myMap.addLayer(osm);
-
 	// add markers?
 	MarkMe();
 }
