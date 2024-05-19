@@ -8,4 +8,8 @@ function MarkMe() {
   function openHome1() {
     home1.openPopup;
   }
+
+  birth.on('click', function(e) {
+    map.setView(e.latlng, 100); // Zoom to level 15 when marker1 is clicked
+});
 }
