@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 	    <title>Example leaflet.js map</title>
 		<style type="text/css">
-			#mapid { height: 600px; width: 800px; float:right; }
-			#text { width: 300px; float:left; }
+			#body { padding: 0; margin: 0; }
+			#html, body, #mapid { height: 100%; width: 100%; }
 			
 			/* To make #mapid take up the full screen the following is needed: 
 			body { padding: 0; margin: 0; }
@@ -25,12 +25,6 @@
 	</head>
 
 	<body onload="initialise()">
-		<h1>My example map</h1>
-		<div id="text">
-			This is some text<br>
-			It demonstrates different map placements<br>
-			Goal achieved!
-		</div>
 		<div id="mapid"></div>
 	</body>
 </html>
