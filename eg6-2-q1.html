@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>Example leaflet.js map</title>
+		<style type="text/css">
+			#mapid { height: 300px; width: 400px; float:right; }
+			#text { width: 300px; float:left; }
+			
+			/* To make #mapid take up the full screen the following is needed: 
+			body { padding: 0; margin: 0; }
+			html, body, #mapid { height: 100%; width: 100%; }
+			*/
+		</style>
+		
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+			crossorigin=""/>
+		
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+			crossorigin=""></script>
+
+	    <script src="./eg6-2-maplogic.js"></script>
+	</head>
+
+	<body onload="initialise()">
+		<h1>My example map</h1>
+		<div id="text">
+			This is some text<br>
+			It demonstrates different map placements<br>
+			Goal achieved!
+		</div>
+		<div id="mapid"></div>
+	</body>
+</html>
