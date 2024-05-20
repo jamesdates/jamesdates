@@ -30,6 +30,7 @@ function addMarkers() {
     // Function to open home1 marker's popup when the link in birth marker's popup is clicked
     window.openHome1 = function() {
         home1.openPopup();
+        myMap.setView(new L.LatLng(58.65287758119509, 9.143629797084088), 15);
     }
 
     // Add click event listener to birth marker to zoom in when clicked
